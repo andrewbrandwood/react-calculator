@@ -1,6 +1,15 @@
 import React from 'react';
-import * as math from 'mathjs';
+import App from '../App';
+import Calculator from '../Calculator';
 
 it('adds some numbers', () => {
-  expect(math.add(1, 2)).toEqual(3);
+  expect(Calculator.add(1, 2)).toEqual(3);
+});
+
+it('multiplies some numbers', () => {
+  expect(Calculator.multiply(5,5)).toEqual(25);
+});
+
+it('subtracts some numbers', () => {
+  expect(Calculator.subtract(7,4)).toEqual(3);
 });
