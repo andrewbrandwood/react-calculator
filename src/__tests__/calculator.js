@@ -1,6 +1,6 @@
 import React from 'react';
 import App from '../App';
-import Calculator from '../Calculator';
+import * as Calculator from '../Calculator';
 
 it('adds some numbers', () => {
   expect(Calculator.add(1, 2)).toEqual(3);

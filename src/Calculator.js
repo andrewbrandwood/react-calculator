@@ -1,16 +1,13 @@
 import * as math from 'mathjs';
 
-function Calculator (){
-
-  const add = math.add;;
-  const multiply = math.multiply;
-  const subtract = math.subtract;
-
-  return {
-    add: add,
-    multiply: multiply,
-    subtract: subtract
-  }
+export const add = (...numbers) => {
+  return math.add(...numbers);
 }
 
-export default Calculator;
+export const multiply = (...numbers) => {
+  return math.multiply(...numbers);
+}
+
+export const subtract = (...numbers) => {
+  return math.subtract(...numbers);
+}
